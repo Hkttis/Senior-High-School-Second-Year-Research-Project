@@ -14,7 +14,7 @@ def data_clean_and_classify(data) :
       # let the same country or town to be same name ('溫宿國'->'溫宿')
       if row[p1][-1] == '國' or row[p1][-1] == '城' or row[p1][-1] == '王':
         row[p1] = row[p1][:-1]
-      if row[p2][-1] == '國' or row[p2][-1] == '城' or row[p1][-1] == '王':
+      if row[p2][-1] == '國' or row[p2][-1] == '城' or row[p2][-1] == '王':
         row[p2] = row[p2][:-1]
     for row in data :
       # classify the data
